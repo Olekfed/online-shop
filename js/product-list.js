@@ -56,12 +56,12 @@ class ProductList {
       );
     document.querySelector('.sort-asc').addEventListener('click', async () => {
         this.sortDirection = 'ascending';
-        await this.renderProducts();
+        this.renderProducts();
         this.addEventListeners();
     });
     document.querySelector('.sort-desc').addEventListener('click', async () => {
         this.sortDirection = 'descending';
-        await this.renderProducts();
+        this.renderProducts();
         this.addEventListeners();
     });
   }
